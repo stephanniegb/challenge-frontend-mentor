@@ -26,17 +26,15 @@
             font-weight: 700;
         }
         img{
-            border-radius: 5%;
-        }
-        .container{
-            border-radius: 10%;
+            border-radius: 2%;
         }
         .card{
-            margin-left: 500px;
             background-color:white;
-            width: 350px;
-            padding-top: 10px;
-            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 500px;
+            margin-right: 500px;
+            padding-top: 15px;
             border-radius: 10px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             transition: 0.3s;
@@ -44,15 +42,16 @@
     </style>
 </head>
 <body>
-    <div class="card">
-        <img src="image-qr-code.png" width="320px" alt="qr image to scan">
-     <div class="container"><h2>Improve your front-end <br>
-         skills by building projects</h2>
-        <p style="font-weight: 400;">scan the QR code to visit frontend<br>
-            mentor and take your coding skills<br>
-            to the next level</p>
-     </div>
-     
-    </div>
+    <main>
+        <section class="card">
+            <div>
+                <img src="image-qr-code.png" width="310px" alt="qr image to scan">
+                <h2>Improve your front end<br> skils by building projects</h2>
+                <p>scan the QR code to visit frontend<br>
+                mentor and take your coding skills<br>to the next level!</p>
+            </div>
+
+        </section>
+    </main>
 </body>
 </html>
