@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+    <title>Order Summary</title>
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+    <style>
+         body{
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('pattern-background-desktop.svg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.content{
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(223, 47%, 23%);
+    background-color:white;
+    margin-left: 500px;
+    margin-top: 100px;
+    border-radius: 10px;
+    width: 400px;
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2);
+    transition: 0.3s;
+    
+}
+h2{
+    text-align: center;
+    font-weight: 900;
+}
+p{
+    font-size: 16px;
+    text-align: center;
+    
+}
+.hero{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.proceed-btn{
+    color: white;
+    font-weight: 700;
+    background-color: hsl(245, 75%, 52%);
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2);
+    transition: 0.3s;
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+.cancel-btn{
+    font-weight: 700;
+    color:hsl(223, 47%, 23%) ;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    width: 300px;
+    align-self: center;
+
+}
+.plan{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display:grid;
+    grid-template-columns: 30% 30% 40%;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: auto;
+}
+.music-img{
+    padding: 10px;
+}
+a{
+    font-weight: 700;
+    margin:20px 5px 10px 50px;
+}
+a:link{
+color: hsl(245, 75%, 52%);
+}
+a:visited{
+color: purple;
+}
+a:hover{
+    text-decoration: none;
+    color: blueviolet;
+}
+a:active{
+color: red;
+}
+.proceed-btn:hover{
+    cursor: pointer;
+    background-color:blueviolet;
+}
+.cancel-btn:hover{
+    cursor: pointer;
+    color:black;
+    font-weight: 900;
+}
+    </style>
+</head>
+<body>
+    <main>
+        
+        <section class="content">
+            <img class="hero" src="illustration-hero.svg">
+            <h2>Order Summary</h2>
+            <p>You can now listen to millions of songs,<br>
+            audiobooks and podcast on any device<br>
+        anywhere you like!</p>
+        <div class="plan">     
+      <img class="music-img" src="icon-music.svg" width="auto">
+      <p class="payment"> <b>Annual plan</b><br>$59.99/year</p>
+      <a href="change.com">change</a>
+        </div>
+         
+        <button class="proceed-btn">Proceed to payment</button>
+        <button class="cancel-btn">Cancel order</button>
+        </section>
+    </main>
+</body>
+</html>
